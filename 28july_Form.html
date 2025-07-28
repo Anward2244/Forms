@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="./submitted.html" method="get" autocomplete="off">
+        <center>
+        <img src="./images/tsrtc.png" alt="" width="75%">
+        <fieldset>
+        <legend style="background-color:dodgerblue; color: aliceblue;">Applicant Details</legend>
+            <table border="0" width="100%" cellpadding="5">
+                <tr>
+                    <td><label for="name">Name<span style="color: red;"><sup>*</sup></span>:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><label for="fathername">Father/ Guardian's Name<span style="color: red;"><sup>*</sup></span>:</label></td>
+                    <td><input type="text" id="fathername" name="fathername" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth<span style="color: red;"><sup>*</sup></span>:</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><label for="gender">gender:</label></td>
+                    <td><input type="radio" id="gender" name="gender" value="Male">Male
+                        <input type="radio" id="gender" name="gender" value="Female">Female</td>
+                </tr>
+                <tr>
+                    <td><label for="aadhar">Aadhar no<span style="color: red;"><sup>*</sup></span>:</label></td>
+                    <td><input type="text" id="aadhar" name="aadhar" maxlength="12" minlength="12" required></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><label for="wno">Whatsapp no<span style="color: red;"><sup>*</sup></span>:</label></td>
+                    <td><input type="text" id="wno" name="wno" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">Email-id<span style="color: red;"><sup>*</sup></span>:</label></td>
+                    <td><input type="email" id="mail" name="mail" required></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><label for="photo">Photo<span style="color: red;"><sup>*</sup></span>:</label></td>
+                    <td><input type="file" id="photo" name="photo"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <pre>
+
+        </pre>
+        <fieldset><legend style="background-color:dodgerblue; color: aliceblue;">Residential Address Details</legend>
+                <table border="0" width="100%" cellpadding="5">
+                    <tr>
+                        <td><label for="appaddress">Applicant's Address<span style="color: red;"><sup>*</sup></span>:</label></td>
+                        <td><textarea name="appaddress" id="appaddress" required></textarea></td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td><label for="dist">District<span style="color: red;"><sup>*</sup></span>:</label></td>
+                        <td><select name="dist" id="dist" required><option value="Hyderabad">Hyderabad</option>
+                                                          <option value="Secunderbad">Secunderbad</option></select></td></tr>
+                    <tr>
+                        <td><label for="mandal">Mandal<span style="color: red;"><sup>*</sup></span>:</label></td>
+                        <td><select name="dist" id="dist"><option value="Hyderabad">Hyderabad</option>
+                                                          <option value="Secunderbad">Secunderbad</option></select></td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td><label for="Village">Village<span style="color: red;"><sup>*</sup></span>:</label></td>
+                        <td><select name="Village" id="Village"><option value="Hyderabad">Hyderabad</option>
+                                                          <option value="Secunderbad">Secunderbad</option></select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pcode">pincode<span style="color: red;"><sup>*</sup></span>:</label></td>
+                        <td><input type="text" id="pcode" name="pcode" maxlength="6" minlength="6"></td>
+                    </tr>
+                </table>
+        </fieldset>
+    </center>
+    <pre>
+
+    </pre>
+    <fieldset>
+            <legend style="background-color:dodgerblue; color: aliceblue;">Pass Type Details</legend>
+                <table border="0" cellpadding="5">
+                    <tr>
+                        <td><label for="city">City<span style="color: red;"><sup>*</sup></span>:</label></td>
+                        <td><select name="city" id="city"><option value="Hyderabad">Hyderabad</option>
+                                                          <option value="Secunderbad">Secunderbad</option></select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="passtype">Pass Type<span style="color: red;"><sup>*</sup></span>:</label></td>
+                        <td><select name="passtype" id="passtype"><option value="---select---">---select---</option>
+                                                        <option value="Greater pass">Greater Pass</option>
+                                                        <option value="General Ordinary Route Pass MLTY">General Ordinary Route Pass MLTY</option>
+                                                        <option value="General Metro Express Route Pass MLTY">General Metro Express Route Pass MLTY</option>
+                                                        <option value="Ordinary Pass">Ordinary Pass</option>
+                                                        <option value="Metro Express Pass">Metro Express Pass</option>
+                                                        <option value="Metro Deluxe Pass">Metro Deluxe Pass</option></select></td>
+                    </tr>
+                </table>
+        </fieldset>
+        <pre>
+
+        </pre>
+        <fieldset>
+            <legend style="background-color:dodgerblue; color: aliceblue;">Mode of Payment & Pass Collection</legend>
+                <table>
+                    <tr>
+                        <td><label for="paymode">Payment Mode<span style="color: red;"><sup>*</sup></span>:</label></td>
+                        <td><select name="paymode" id="paymode"><option value="Select Payment Mode">Select Payment Mode</option>
+                                                        <option value="payment at counter">Payment at Counter</option></select></td></tr>
+                    <tr>
+                        <td><label for="delivery mode">Pass Delivery Mode<span style="color: red;"><sup>*</sup></span>:</label></td>
+                        <td><select name="delivery mode" id="delivery mode"><option value="Select Pass Delivery Mode">Select Pass Delivery Mode</option>
+                                                        <option value="at counter">At Counter</option></select></td></tr>
+                    </tr>
+                    <tr>
+                        <td><label for="center">Center at which you want to Collect Pass<span style="color: red;"><sup>*</sup></span>:</label></td>
+                        <td><select name="center" id="center"><option value="---select---">---select---</option>
+                                                        <option value="kphb">RTC KPHB--HYD</option>
+                                                        <option value="koti">RTC KOTI--HYD</option>
+                                                        <option value="kukatpalli">RTC KUKATPALLI--HYD</option>
+                                                        <option value="charminar">RTC CHARMINAR--HYD</option>
+                                                        <option value="ngos">RTC NGOS COLONY--HYD</option>
+                                                        <option value="uppal">RTC UPPAL--HYD</option></select></td>
+                    </tr>
+                </table>
+        </fieldset>
+        <pre>
+
+        </pre>
+        <center>
+            <img src="./images/otp_code.png" alt="" width="250">
+            <br>
+            <input type="text">
+            <br>
+            <input type="submit" style="background-color: hotpink; color: aliceblue;">
+        </center>
+    </form>
+</body>
+</html>
