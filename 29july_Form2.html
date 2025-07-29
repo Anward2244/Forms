@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>application form</title>
+</head>
+<body style="background-color: rgb(61, 90, 144);">
+    <center><h1 style="color: aliceblue;">Application Form</h1></center>
+    <form action="./submitted.html">
+        <table border="0" width="100%" cellpadding="5">
+                <tr style="color: aliceblue;">
+                    <td><label for="firstname">First Name:</label></td>
+                    <td><input type="text" id="firstname" name="firstname"></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><label for="lastname">Last Name:</label></td>
+                    <td><input type="text" id="fathername" name="fathername"></td>
+                </tr>
+                <tr style="color: aliceblue;">
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob"></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><label for="gender">Gender:</label></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr style="color: aliceblue;">
+                   <td><label for="gender" style="color: aliceblue;">gender:</label></td>
+                    <td><input type="radio" id="gender" name="gender" value="Male">Male
+                        <input type="radio" id="gender" name="gender" value="Female">Female</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><label for="mail">Email Address:</label></td>
+                    <td><input type="email" id="mail" name="mail"></td>
+                </tr>
+                <tr style="color: aliceblue;">
+                    <td><label for="posavail">Positions Available:</label></td>
+                    <td colspan="4"><input type="radio" id="posavail" name="posavail" value="Junior Developer">Junior Developer
+                                    <input type="radio" id="posavail" name="posavail" value="Mid-Level Developer">Mid-Level Developer
+                                    <input type="radio" id="posavail" name="posavail" value="Senior Developer">Senior Developer
+                    </td>
+                </tr>
+                <tr style="color: aliceblue;"><td colspan="5"><label for="proglang">Programming Languages:</label>
+                                    <input type="checkbox" id="proglang" name="proglang" value="JavaScript">JavaScript
+                                    <input type="checkbox" id="proglang" name="proglang" value="HTML">HTML
+                                    <input type="checkbox" id="proglang" name="proglang" value="CSS">CSS
+                                    <input type="checkbox" id="proglang" name="proglang" value="Python">Python
+                    </td>
+                </tr>
+                 <tr style="color: aliceblue;">
+                    <td><label for="pw">Password:</label></td>
+                    <td><input type="password" id="pw" name="pw"></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><label for="cpw">Confirm Password:</label></td>
+                    <td><input type="password" id="cpw" name="cpw"></td>
+                </tr>
+        </table>
+        <br>
+        <center>
+            <input type="submit" name="submit" id="submit" style="color: aliceblue; background-color: chocolate; border-color: chocolate;">
+            <input type="reset" name="reset" id="reset" style="color: aliceblue; background-color: chocolate; border-color: chocolate;">
+        </center>
+    </form>
+</body>
+</html>
